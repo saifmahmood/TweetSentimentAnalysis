@@ -1,0 +1,16 @@
+Steps to run the program:
+- in the terminal go to the kafka directory then enter the command: bin/zookeeper-server-start.sh config/zookeeper.properties
+- in the terminal go to the kafka directory then enter the command: bin/kafka-server-start.sh config/server.properties 
+- In the terminal go to the directory containing the python files then enter the command: python3 StreamProducer.py
+                                                                                          Enter the tweet: trump/coronavirus/vaccine
+- In the terminal go to the directory containing the python files then enter the command: python3 StreamConsumer.py
+                                                                                          Enter the tweet: trump/coronavirus/vaccine
+- Go to the directory containing the elastic search then enter the command: ./elasticsearch   
+
+- Go to the directory containing the kibana then enter the command: ./kibana
+
+_ Open up a web browser then enter the url: http://localhost:5601
+
+- The open the menu in kibana -> stack management -> index management -> index pattern
+
+_ Open the charts in the dashboard by adding the sentiment analysis onto the charts.        
